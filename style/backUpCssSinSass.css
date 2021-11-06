@@ -1,0 +1,674 @@
+/* ----- TIPOGRAFIA GOOGLE ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap');
+/* ----- RESETEO ----- */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* DESKTOP */
+
+@media(min-width:1024px) {
+    /* ----- BODY -----*/
+    body {
+        background-color: #daeedb;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* -/- HEADER -/- */
+    /* -- NAV -- */
+    .header__nav {
+        background-color: #85d485;
+        color: rgb(14, 95, 35);
+    }
+    .header__nav--banner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1.3rem;
+        list-style: none;
+    }
+    .header__nav--banner li {
+        display: inline-block;
+    }
+    .header__nav--banner a, label, input {
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem;
+        color: darkgreen;
+        margin: auto;
+    }
+    .header__nav--banner a {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 1.3rem
+    }
+    .header__nav--banner label {
+        font-weight: 400;
+        padding: 1.3rem
+    }
+    .header__nav--banner input {
+        font-weight: 100;
+        color: rgb(119, 144, 115);
+    }
+    /* -/- MAIN -/- */
+    /* -- SECTIONS -- */
+    /* SECTION1 */
+    .main__section1 {
+        display: grid;
+        background-color: #daeedb;
+        color: #043f04;
+        padding: 1.3rem;
+        grid-template-areas: "left left ." "left left right" "left left right";
+        
+        
+        grid-row-gap: 1rem;
+        grid-column-gap: 20px;
+        height: 100vh;
+        justify-items: start;
+    }
+    .main__section1--left {
+        grid-area: left;
+    }
+    .main__section1--right {
+        grid-area: right;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+    .main__section1--title {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .main__section1--h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .main__section1--text {
+        width: 65%;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .main__section1--imagen {
+        width: 85%;
+        border: 0.3rem solid rgb(5, 73, 3);
+    }
+    .main__section1--tableFlex {
+        width: 100%;
+        height: 50vh;
+        border: 0.3rem solid rgb(5, 73, 3);
+        padding: 1.3rem;
+    }
+    .main__section1--table {
+        width: 100%;
+        height: 50vh;
+        border: 0.3rem solid rgb(5, 73, 3);
+    }
+    td, th {
+        text-align: center;
+        border: 0.1rem solid rgb(5, 73, 3);
+    }
+    .main__section1--encabezadoFila {
+        background-color: #d5e6d5;
+        color: rgb(25, 93, 17);
+    }
+    .main__section1--tipoFila1 {
+        background-color: #26ac17;
+        color: white;
+    }
+    .main__section1--tipoFila2 {
+        background-color: #2d6409;
+        color: white;
+    }
+    /* SECTION2 */
+    .main__section2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: #043f04;
+        color: #daeedb;
+        padding: 1.3rem;
+    }
+    .main__section2 div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .main__section2 iframe {
+        padding-top: 1rem;
+    }
+    .main__section2--h2 {
+        font-size: 40PX;
+        font-weight: 400;
+    }
+    /* SECTION3 */
+    .main__section3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #daeedb;
+        color: #043f04;
+        padding: 1.3rem;
+    }
+    .main__section3--sectionLeft {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-right: 1rem;
+        width: 30%;
+    }
+    .main__section3--imagenRedonda1 {
+        background-image: url("../img/organizadores.jpg");
+        background-color: rgb(69, 129, 179);
+        height: 20rem;
+        width: 20rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        background-size: 100% auto;
+    }
+    .main__section3--h2 {
+        font-size: 40PX;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .main__section3--contenido {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+    .main__section3--sectionCenter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 30%;
+    }
+    .main__section3--imagenRedonda2 {
+        background-image: url("../img/padel news.jpg");
+        background-color: rgb(231, 237, 241);
+        height: 20rem;
+        width: 20rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        background-size: 100% auto;
+    }
+    .main__section3--sectionRight {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 1rem;
+        width: 30%;
+    }
+    .main__section3--imagenRedonda3 {
+        background-image: url("../img/alianzas.jpg");
+        background-color: rgb(32, 76, 112);
+        height: 20rem;
+        width: 20rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        background-size: 100% auto;
+    }
+    /* ----- FOOTER ----- */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #85d485;
+        color: rgb(14, 95, 35);
+        padding: 1.3rem;
+    }
+    .footer__nav--div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer__nav li {
+        list-style: none;
+        display: inline-block;
+    }
+    .footer__nav a {
+        text-decoration: none;
+        text-align: left;
+        font-size: 1rem;
+        color: darkgreen;
+    }
+    .footer__nav a {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-right: 1.1rem
+    }
+    .footer__menu--div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: right;
+    }
+    .footer__menu--subtitulo {
+        font-size: 20PX;
+        font-weight: 400;
+    }
+    .footer__menu--icon {
+        list-style: none;
+        display: inline-block;
+        padding-top: 0.2rem;
+    }
+    .footer__menu--icon li {
+        display: inline-block;
+    }
+    .icon {
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 1.3rem;
+        align-items: center;
+    }
+    /* forms */
+    form{
+        background-color: #d5e6d5;
+       padding-left: 6rem;
+       padding-right: 6rem;
+        margin: 1rem;
+    }
+    .main__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .main__form legend {
+        color: darkred;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem;
+    }
+    .main__form form {
+        text-align: left;
+    }
+    .main__form--flexBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.3rem;
+    }
+    .main__form--label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    .main__form--labelColumn {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    .main__form--tipoTorneo {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: rgb(143, 10, 10);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .main__form--tipoTorneo input {
+        padding-bottom: 1rem;
+    }
+    .main__form--textArea {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+  
+    .main__form--labelEspecial {
+        text-align: center;
+        padding: 1.2rem;
+    }
+    .main__form--BasesYCondiciones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .main__form--buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+   
+    .main__form label {
+        font-size: 1.2rem;
+        color: darkgreen;
+    }
+}
+
+@media (max-width:1024px) {
+    /* MOBILE */
+    /* ----- BODY -----*/
+    body {
+        background-color: #daeedb;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* -/- HEADER -/- */
+    /* -- NAV -- */
+    .header__nav {
+        background-color: #85d485;
+        color: rgb(14, 95, 35);
+    }
+    .header__nav--banner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: left;
+        justify-content: space-around;
+        padding: 1rem;
+        list-style: none;
+    }
+    .header__nav--banner li {
+        display: inline-block;
+    }
+    .header__nav--banner a, label, input {
+        text-decoration: none;
+        text-align: center;
+        font-size: 0.7rem;
+        color: darkgreen;
+    }
+    .header__nav--banner a {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .header__nav--banner label {
+        font-weight: 400;
+    }
+    .header__nav--banner input {
+        font-weight: 100;
+        color: rgb(119, 144, 115);
+    }
+    /* -/- MAIN -/- */
+    /* -- SECTIONS -- */
+    /* SECTION1 */
+    .main__section1 {
+        display: grid;
+        grid-template-areas: "left" "right";
+        grid-row-gap: 0.8rem;
+        background-color: #daeedb;
+        color: #043f04;
+        padding: 1rem;
+    }
+    .main__section1--left {
+        grid-area: left;
+        text-align: left;
+    }
+    .main__section1--right {
+        grid-area: right;
+        text-align: left;
+    }
+    .main__section1--title {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .main__section1--h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .main__section1--text {
+        padding-bottom: 0.5rem;
+        text-align: justify;
+    }
+    .main__section1--imagen {
+        width: 100%;
+        border: 0.2rem solid rgb(5, 73, 3);
+    }
+    .main__section1--table {
+        width: 100%;
+        border: 0.2rem solid rgb(5, 73, 3);
+    }
+    .main__section1--tableFlex {
+        width: 100%;
+        height: 50vh;
+        border: 0.2rem solid rgb(5, 73, 3);
+        padding: 0.5rem;
+    }
+    td, th {
+        text-align: center;
+        border: 0.1rem solid rgb(5, 73, 3);
+    }
+    .main__section1--encabezadoFila {
+        background-color: #d5e6d5;
+        color: rgb(25, 93, 17);
+    }
+    .main__section1--tipoFila1 {
+        background-color: #26ac17;
+        color: white;
+    }
+    .main__section1--tipoFila2 {
+        background-color: #2d6409;
+        color: white;
+    }
+    /* SECTION2 */
+    .main__section2 {
+        align-items: center;
+        background-color: #043f04;
+        color: #daeedb;
+        padding: 1rem;
+    }
+    .main__section2 div {
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+    .main__section2 iframe {
+        padding-top: 0.5rem;
+    }
+    .main__section2--h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+    /* SECTION3 */
+    .main__section3 {
+        display: grid;
+        grid-template-areas: "left" "center" "right";
+        grid-row-gap: 0.8rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #daeedb;
+        color: #043f04;
+        padding: 1rem;
+    }
+    .main__section3--sectionLeft {
+        padding-top: 0.5rem;
+        grid-area: left;
+    }
+    .main__section3--imagenRedonda1 {
+        background-image: url("../img/organizadores.jpg");
+        background-color: rgb(69, 129, 179);
+        height: 15rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .main__section3--h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 400;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .main__section3--contenido {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+    .main__section3--sectionCenter {
+        padding-top: 0.5rem;
+        grid-area: center;
+    }
+    .main__section3--imagenRedonda2 {
+        background-image: url("../img/padel news.jpg");
+        background-color: rgb(231, 237, 241);
+        height: 15rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .main__section3--sectionRight {
+        padding-top: 0.5rem;
+        grid-area: right;
+    }
+    .main__section3--imagenRedonda3 {
+        background-image: url("../img/alianzas.jpg");
+        background-color: rgb(32, 76, 112);
+        height: 15rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* ----- FOOTER ----- */
+    .footer {
+        justify-content: space-between;
+        background-color: #85d485;
+        color: rgb(14, 95, 35);
+        padding: 1rem;
+    }
+    .footer__nav--div {
+        text-align: center;
+        align-items: center;
+    }
+    .footer__nav li {
+        list-style: none;
+        display: inline-block;
+    }
+    .footer__nav a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: darkgreen;
+    }
+    .footer__nav a {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .footer__menu--div {
+        text-align: center;
+        justify-content: right;
+    }
+    .footer__menu--subtitulo {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 400;
+        padding-top: 0.5rem;
+    }
+    .footer__menu--icon {
+        list-style: none;
+        display: inline-block;
+        padding-top: 0.5rem;
+    }
+    .footer__menu--icon li {
+        display: inline-block;
+    }
+    .icon {
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 1.3rem;
+        align-items: center;
+    }
+    /* forms */
+    form{
+        background-color: #d5e6d5;
+       padding-left: 3rem;
+       padding-right: 3rem;
+        margin: 1rem;
+    }
+    .main__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .main__form legend {
+        color: darkred;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem;
+    }
+    .main__form form {
+        text-align: left;
+    }
+    .main__form--flexBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.3rem;
+    }
+    .main__form--label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1.2rem;
+    }
+    .main__form--labelColumn {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    
+    .main__form--tipoTorneo input {
+        padding-bottom: 1rem;
+    }
+    .main__form--textArea {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .main__form--tipoTorneo {
+       
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+            color: rgb(143, 10, 10);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+       
+    }
+    .main__form--labelEspecial {
+        text-align: center;
+        padding: 1rem;
+    }
+    .main__form--BasesYCondiciones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .main__form--buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .main__form label {
+        font-size: 1.2rem;
+        color: darkgreen;
+    }
+}

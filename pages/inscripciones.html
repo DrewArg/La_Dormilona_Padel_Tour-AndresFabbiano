@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd3a8c780e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../sass/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Inscripciones</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light header__nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="header__nav--banner">
+                        <li><a href="../index.html">LDP</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                        <li> <a href="calendario.html">Calendario de Partidos</a></li>
+                        <li><a href="reglamento.html">Reglamento</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="col-lg-12 col-md-8 col-xs-4">
+            <form>
+                <h3 class="main__section1--h3">Formulario de Inscripción</h3>
+
+                <h2 class="main__form--tipoTorneo">Tipo de Torneo</h2>
+                <div class="main__form--buttons">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="Masculino">
+                        <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="Femenino">
+                        <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="Mixto">
+                        <label class="form-check-label" for="inlineRadio3">Mixto</label>
+                    </div>
+                </div>
+                <h2 class="main__form--tipoTorneo">Información personal del primer jugador/a</h2>
+                <div class="mb-5">
+                    <label for="exampleInputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputLastName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="exampleInputLastName">
+                </div>
+                <h2 class="main__form--tipoTorneo">Información personal del segundo jugador/a</h2>
+                <div class="mb-5">
+                    <label for="exampleInputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputLastName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="exampleInputLastName">
+                </div>
+
+
+
+                <div class="main__form--labelEspecial">
+
+                    <label for="categoriaPareja">Categoría de la pareja: </label>
+                    <select name="categoriaPareja" id="">
+                        <option value="septima">Séptima</option>
+                        <option value="sexta">Sexta</option>
+                        <option value="quinta">Quinta</option>
+                    </select>
+
+                </div>
+                <div class="main__form--BasesYCondiciones">
+                    <div>Bases y Condiciones:</div>
+                    <div>
+                        <input type="checkbox" name="cbox1">He leído el reglamento.
+                    </div>
+                    <div> <input type="checkbox" name="cbox2">Estoy de acuerdo con el costo de inscripción.
+                    </div>
+                    <div><input type="checkbox" name="cbox3">La información detallada en el formulario es
+                        verídica.</div>
+                </div>
+
+
+                <div class="main__form--buttons">
+                    <input type="reset" class="btn btn-danger">
+                    <input type="submit" class="btn btn-primary">
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__nav--div">
+            <ul class="footer__nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./inscripciones.html">Inscripciones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__menu--div">
+            <h4 class="footer__menu--subtitulo">Mantente al tanto de nuestras novedades en las redes!</h4>
+
+            <ul class="footer__menu--icon">
+                <li><a href="http://facebook.com"><i class="fab fa-facebook-square icon"></i></a></li>
+                <li>
+                    <a href="http://instagram.com"><i class="fab fa-instagram-square icon"></i></a>
+                </li>
+                <li><a href="http://twitter.com"><i class="fab fa-twitter-square icon"></i></a></li>
+                <li>
+                    <a href="http://youtube.com"><i class="fab fa-youtube-square icon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

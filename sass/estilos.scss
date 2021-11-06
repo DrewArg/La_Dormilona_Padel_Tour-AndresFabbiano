@@ -1,0 +1,59 @@
+@import "_responsiveDesktop.scss";
+@import "_responsiveMobile.scss";
+
+/* -/- FOOTER -/- */
+
+.footer {
+    justify-content: space-between;
+    background-color: $Color-Secundario;
+    color: rgb(14, 95, 35);
+    padding: 1rem;
+
+    &__nav {
+        &--div {
+            text-align: center;
+            align-items: center;
+        }
+        & li {
+            list-style: none;
+            display: inline-block;
+        }
+        & a {
+            text-decoration: none;
+            color: darkgreen;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    &__menu {
+        &--div {
+            text-align: center;
+            justify-content: right;
+        }
+        &--subtitulo {
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: 400;
+            padding-top: 0.5rem;
+        }
+        &--icon {
+            list-style: none;
+            display: inline-block;
+            padding-top: 0.5rem;
+            & li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+/* -/- ICON -/- */
+
+.icon {
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 1.3rem;
+    align-items: center;
+}

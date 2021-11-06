@@ -1,0 +1,19 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrewArg/La_Dormilona_Padel_Tour-Fabbiano_Andres.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrewArg/La_Dormilona_Padel_Tour-Fabbiano_Andres/issues"
+  },
+  "homepage": "https://github.com/DrewArg/La_Dormilona_Padel_Tour-Fabbiano_Andres#readme"
+}

@@ -1,0 +1,22 @@
+$padding-Left: 6rem;
+$padding-Right: 6rem;
+$margin: 1rem;
+
+@mixin formDesktop {
+    background-color: #d5e6d5;
+    padding-left: $padding-Left;
+    padding-right: $padding-Right;
+    margin: $margin;
+}
+
+@mixin formMobile {
+    background-color: #d5e6d5;
+    padding-left: $padding-Left/2;
+    padding-right: $padding-Right/2;
+    margin: $margin;
+}
+
+@mixin interiorTabla {
+    text-align: center;
+    border: 0.1rem solid rgb(5, 73, 3);
+}
