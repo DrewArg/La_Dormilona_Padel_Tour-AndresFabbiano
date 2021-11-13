@@ -60,11 +60,12 @@
                 padding-right: 1.3rem;
             }
             & a:hover {
-                background-color: #186918;
+                background-color: #3a8a3a;
                 color: $Color-Principal;
                 font-weight: 600;
                 text-transform: uppercase;
-                padding: 1.3rem;
+                text-decoration: none;
+                padding: 0.6rem;
             }
             & a,
             label,
@@ -75,14 +76,16 @@
                 color: darkgreen;
                 font-weight: 600;
             }
-
-            &CurrentMenu {
-                background-color: #186918;
-                color: $Color-Principal;
-                font-weight: 600;
-                text-transform: uppercase;
-            }
         }
+    }
+
+    #header__nav--currentMenu {
+        background-color: #3a8a3a;
+        color: $Color-Principal;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.6rem;
     }
 
     /* ----- MAIN ----- */
@@ -94,15 +97,14 @@
             background-color: $Color-Principal;
             color: #043f04;
             padding: 1.3rem;
-          
+
             justify-items: center;
 
             &--top {
-               padding: 1rem;
+                padding: 1rem;
             }
             &--bottom {
                 padding: 1rem;
-                
             }
             &--title {
                 font-size: $FontSize-Title-Desktop;
@@ -113,9 +115,8 @@
             &--h3 {
                 text-align: center;
                 font-size: 2.2rem;
-                font-weight:600;
+                font-weight: 600;
                 padding: 1rem;
-                
             }
             &--text {
                 width: auto;

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap");
-@import "_./css/bootstrap.css";
 * {
   padding: 0px;
   margin: 0px;
@@ -68,11 +67,12 @@ th {
     padding-right: 1.3rem;
   }
   .header__nav--banner a:hover {
-    background-color: #186918;
+    background-color: #3a8a3a;
     color: #daeedb;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 1.3rem;
+    text-decoration: none;
+    padding: 0.6rem;
   }
   .header__nav--banner a,
 .header__nav--banner label,
@@ -83,11 +83,14 @@ th {
     color: darkgreen;
     font-weight: 600;
   }
-  .header__nav--bannerCurrentMenu {
-    background-color: #186918;
+
+  #header__nav--currentMenu {
+    background-color: #3a8a3a;
     color: #daeedb;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.6rem;
   }
 
   /* ----- MAIN ----- */
