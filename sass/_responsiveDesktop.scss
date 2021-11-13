@@ -30,28 +30,37 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-around;
-            padding: 1.3rem;
+            text-align: center;
+            width: auto;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0;
             list-style: none;
+
             & li {
                 display: inline-block;
+                align-items: center;
+                text-align: center;
+                justify-content: space-between;
             }
             & a {
                 font-weight: 600;
                 text-transform: uppercase;
-                padding: 1.3rem;
+                padding-right: 1.3rem;
             }
             & label {
                 font-weight: 400;
-                padding: 1.3rem;
+                padding-right: 1.3rem;
             }
             & input {
                 font-weight: 100;
                 color: rgb(119, 144, 115);
+                padding-right: 1.3rem;
             }
             & a:hover {
-                background-color: #043f04;
+                background-color: #186918;
                 color: $Color-Principal;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -62,9 +71,16 @@
             input {
                 text-decoration: none;
                 text-align: center;
-                font-size: $FontSize-Texto-Desktop;
+                font-size: 1.3rem;
                 color: darkgreen;
-                margin: auto;
+                font-weight: 600;
+            }
+
+            &CurrentMenu {
+                background-color: #186918;
+                color: $Color-Principal;
+                font-weight: 600;
+                text-transform: uppercase;
             }
         }
     }
@@ -72,35 +88,37 @@
     /* ----- MAIN ----- */
     .main {
         &__section1 {
-            display: grid;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             background-color: $Color-Principal;
             color: #043f04;
             padding: 1.3rem;
-            grid-template-areas: "left left ." "left left right" "left left right";
+          
+            justify-items: center;
 
-            grid-row-gap: 1rem;
-            grid-column-gap: 20px;
-            height: 100vh;
-            justify-items: start;
-
-            &--left {
-                grid-area: left;
+            &--top {
+               padding: 1rem;
             }
-            &--right {
-                grid-area: right;
-                justify-self: stretch;
-                align-self: stretch;
+            &--bottom {
+                padding: 1rem;
+                
             }
             &--title {
                 font-size: $FontSize-Title-Desktop;
                 padding-bottom: 1rem;
+                font-weight: 600;
+                text-align: center;
             }
             &--h3 {
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 2.2rem;
+                font-weight:600;
+                padding: 1rem;
+                
             }
             &--text {
-                width: 65%;
+                width: auto;
                 font-size: 1rem;
                 padding-bottom: 1rem;
             }
