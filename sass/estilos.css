@@ -143,6 +143,7 @@ th {
   .main__section1--encabezadoFila {
     background-color: #d5e6d5;
     color: #195d11;
+    text-align: center;
   }
   .main__section1--tipoFila1 {
     background-color: #26ac17;
@@ -388,24 +389,27 @@ th {
 
   /* -/- MAIN -/- */
   .main__section1 {
-    display: grid;
-    grid-template-areas: "left" "right";
-    grid-row-gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
     background-color: #daeedb;
     color: #043f04;
+    padding: 1.3rem;
+    justify-items: center;
+  }
+  .main__section1--top {
     padding: 1rem;
   }
-  .main__section1--left {
-    grid-area: left;
-    text-align: left;
-  }
-  .main__section1--right {
-    grid-area: right;
-    text-align: left;
+  .main__section1--bottom {
+    padding: 1rem;
   }
   .main__section1--title {
+    font-size: 2rem;
+    font-weight: 600;
     text-align: center;
-    font-size: 1.8rem;
+  }
+  .main__section1--h2 {
+    text-align: center;
+    font-size: 2rem;
   }
   .main__section1--h3 {
     text-align: center;
@@ -413,7 +417,7 @@ th {
   }
   .main__section1--text {
     padding-bottom: 0.5rem;
-    text-align: justify;
+    text-align: center;
   }
   .main__section1--imagen {
     width: 100%;
@@ -432,6 +436,7 @@ th {
   .main__section1--encabezadoFila {
     background-color: #d5e6d5;
     color: #195d11;
+    text-align: center;
   }
   .main__section1--tipoFila1 {
     background-color: #26ac17;
