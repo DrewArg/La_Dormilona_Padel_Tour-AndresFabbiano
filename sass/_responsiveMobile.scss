@@ -64,6 +64,15 @@
         }
     }
 
+    #header__nav--currentMenu {
+        background-color: #3a8a3a;
+        color: $Color-Principal;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.3rem;
+    }
+
     /* -/- MAIN -/- */
 
     .main {
@@ -72,8 +81,6 @@
             flex-direction: column;
             background-color: $Color-Principal;
             color: #043f04;
-            padding: 1.3rem;
-            justify-items: center;
 
             &--top {
                 padding: 1rem;
@@ -92,12 +99,17 @@
                 font-size: 2rem;
             }
             &--h3 {
-                text-align: center;
+                text-align: left;
                 font-size: 1.5rem;
+                padding-left: 2rem;
+            }
+            &--contenido {
+                padding-left: 2rem;
+                padding-right: 1rem;
+                text-align: justify;
             }
             &--text {
                 padding-bottom: 0.5rem;
-                text-align: center;
             }
             &--imagen {
                 width: 100%;
