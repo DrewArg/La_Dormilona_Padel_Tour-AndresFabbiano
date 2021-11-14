@@ -93,7 +93,6 @@
         &__section1 {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             background-color: $Color-Principal;
             color: #043f04;
             padding: 1.3rem;
@@ -120,7 +119,7 @@
             }
             &--text {
                 width: auto;
-                font-size: 1rem;
+                font-size: 1.4rem;
                 padding-bottom: 1rem;
             }
             &--imagen {
