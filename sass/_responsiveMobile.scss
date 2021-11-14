@@ -158,6 +158,16 @@
                 font-size: 1.7rem;
                 font-weight: 400;
             }
+
+            & h3 {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            &--contenido {
+                text-align: justify;
+                font-size: 1.3rem;
+            }
         }
 
         &__section3 {
