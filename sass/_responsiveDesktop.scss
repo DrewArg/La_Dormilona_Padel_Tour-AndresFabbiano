@@ -3,7 +3,7 @@
 @import "_tipografias.scss";
 @import "_mixin.scss";
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     /* ----- BODY -----*/
     body {
         background-color: $Color-Principal;
@@ -25,56 +25,53 @@
     /* -- NAV -- */
     .header__nav {
         background-color: $Color-Secundario;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: "logo lis lis lis";
+        height: 3.5rem;
         color: rgb(14, 95, 35);
+
+        &--logo {
+            grid-area: logo;
+            img {
+                max-width: 130px;
+            }
+        }
         &--banner {
+            grid-area: lis;
+
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: baseline;
-            justify-content: space-around;
-            text-align: center;
-            width: auto;
-            padding-top: 0;
-            padding-bottom: 0;
-            margin: 0;
-            list-style: none;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
 
             & li {
                 display: inline-block;
-                align-items: center;
-                text-align: center;
-                justify-content: space-between;
+                padding: 0.2rem;
             }
+
             & a {
                 font-weight: 600;
                 text-transform: uppercase;
-                padding-right: 1.3rem;
+                text-decoration: none;
+                color: darkgreen;
+                font-size: $FontSize-NavBar-Desktop;
             }
-            & label {
-                font-weight: 400;
-                padding-right: 1.3rem;
-            }
-            & input {
-                font-weight: 100;
-                color: rgb(119, 144, 115);
-                padding-right: 1.3rem;
-            }
+
             & a:hover {
                 background-color: #3a8a3a;
                 color: $Color-Principal;
                 font-weight: 600;
                 text-transform: uppercase;
                 text-decoration: none;
-                padding: 0.6rem;
-            }
-            & a,
-            label,
-            input {
-                text-decoration: none;
-                text-align: center;
-                font-size: 1.3rem;
-                color: darkgreen;
-                font-weight: 600;
+                padding-top: 0.5rem;
+                padding-bottom: 1.6rem;
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
             }
         }
     }
@@ -85,7 +82,10 @@
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 0.6rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1.6rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
 
     /* ----- MAIN ----- */
@@ -95,7 +95,6 @@
             flex-direction: column;
             background-color: $Color-Principal;
             color: #043f04;
-            padding: 1.3rem;
 
             justify-items: center;
 
@@ -118,10 +117,10 @@
             }
 
             &--h3 {
-                text-align: left;
+                text-align: center;
                 font-size: 1.9rem;
                 font-weight: 600;
-                padding-left: 2rem;
+                padding: 2rem;
             }
             &--contenido {
                 padding-left: 2rem;
@@ -132,6 +131,9 @@
                 width: auto;
                 font-size: 1.6rem;
                 padding-bottom: 1rem;
+                background-color: #043f04;
+                color: #d5e6d5;
+                padding: 1rem;
             }
             &--imagen {
                 width: 85%;
@@ -173,15 +175,43 @@
             padding: 1.3rem;
 
             div {
-                display: flex;
+                display: block;
                 flex-direction: column;
                 flex-wrap: nowrap;
                 align-items: center;
                 padding-top: 1rem;
             }
 
-            iframe {
-                padding-top: 1rem;
+            &--video {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+
+                iframe {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                object {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                embed {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
             &--h2 {
@@ -284,6 +314,90 @@
                 background-size: cover;
                 border-radius: 50%;
                 background-size: 100% auto;
+            }
+        }
+
+        &__section4 {
+            padding-left: 25%;
+            padding-right: 25%;
+            padding-top:3%;
+            padding-bottom:3%;
+            display: flex;
+            flex-direction: column;
+            background-color: $Color-Principal;
+            color: #043f04;
+
+            justify-items: center;
+
+            &--top {
+                padding: 1rem;
+            }
+            &--bottom {
+                padding: 1rem;
+            }
+            &--title {
+                font-size: $FontSize-Title-Desktop;
+                padding-bottom: 1rem;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            &--h2 {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            &--h3 {
+                text-align: center;
+                font-size: 1.9rem;
+                font-weight: 600;
+                padding: 2rem;
+            }
+            &--contenido {
+                padding-left: 2rem;
+                padding-right: 1rem;
+                text-align: justify;
+
+                ul{
+                    text-align: center;
+                    list-style: none;
+                }
+            }
+            &--text {
+                width: auto;
+                font-size: 1.6rem;
+                padding-bottom: 1rem;
+                background-color: #043f04;
+                color: #d5e6d5;
+                padding: 1rem;
+            }
+            &--imagen {
+                width: 85%;
+                border: 0.3rem solid rgb(5, 73, 3);
+            }
+            &--tableFlex {
+                width: 100%;
+                height: 50vh;
+                border: 0.3rem solid rgb(5, 73, 3);
+                padding: 1.3rem;
+            }
+            &--table {
+                width: 100%;
+                height: 50vh;
+                border: 0.3rem solid rgb(5, 73, 3);
+            }
+            &--encabezadoFila {
+                background-color: #d5e6d5;
+                color: rgb(25, 93, 17);
+                text-align: center;
+            }
+            &--tipoFila1 {
+                background-color: #26ac17;
+                color: white;
+            }
+            &--tipoFila2 {
+                background-color: #2d6409;
+                color: white;
             }
         }
 

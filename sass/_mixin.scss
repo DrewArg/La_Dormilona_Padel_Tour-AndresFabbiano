@@ -9,10 +9,17 @@ $margin: 1rem;
     margin: $margin;
 }
 
-@mixin formMobile {
+@mixin formTablet {
     background-color: #d5e6d5;
     padding-left: $padding-Left/2;
     padding-right: $padding-Right/2;
+    margin: $margin;
+}
+
+@mixin formMobile {
+    background-color: #d5e6d5;
+    padding-left: $padding-Left/4;
+    padding-right: $padding-Right/4;
     margin: $margin;
 }
 

@@ -25,13 +25,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="header__nav--banner">
-                        <li><a href="./index.html">LDP</a></li>
-                        <li><a href="./index.html" id="header__nav--currentMenu">Home</a></li>
-                        <li><a href="./pages/sobreNosotros.html">Sobre Nosotros</a></li>
-                        <li> <a href="./pages/inscripciones.html">Inscripciones</a></li>
-                        <li> <a href="./pages/calendario.html">Calendario de Partidos</a></li>
-                        <li><a href="./pages/reglamento.html">Reglamento</a></li>
+
+                    <div class="header__nav--logo">
+                        <a href="./index.html"><img src="./img/logo.png" alt="logo La Dormilona Padel Tour"></a>
+
+                    </div>
+
+                    <div class="header__nav--banner">
+                        <ul>
+                            <li><a href="./index.html" id="header__nav--currentMenu">Home</a></li>
+                            <li><a href="./pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                            <li> <a href="./pages/inscripciones.html">Inscripciones</a></li>
+                            <li> <a href="./pages/calendario.html">Calendario</a></li>
+                            <li><a href="./pages/reglamento.html">Reglamento</a></li>
+                        </ul>
+                    </div>
 
                     </ul>
                 </div>
@@ -44,14 +52,6 @@
         <section class="main__section1">
             <div class="main__section1--top">
                 <h1 class="main__section1--title">La Dormilona Padel Tour</h1>
-
-                <div class="main__section1--text">
-                    <p>
-                        "La Dormilona Padel Tour" es un torneo de padel sitiado en zona norte en el cual, las parejas
-                        que jueguen, tendrán la
-                        posibilidad de competir en las mejores canchas de la zona.
-                    </p>
-                </div>
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
@@ -83,6 +83,14 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                </div>
+
+                <div class="main__section1--text">
+                    <p>
+                        "La Dormilona Padel Tour" es un torneo de padel sitiado en zona norte en el cual, las parejas
+                        que jueguen, tendrán la
+                        posibilidad de competir en las mejores canchas de la zona.
+                    </p>
                 </div>
 
 
@@ -220,12 +228,9 @@
                 <p>
                     Todas las semanas estaremos subiendo el video de la mejor jugada de la semana tanto en nuestro
                     Instagram como en nuestro canal oficial de Youtube. Estate atento a nuestras redes! </p>
-
-                <iframe width="100%" height="315vh" src="https://www.youtube.com/embed/QktoWS0pwpE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+                <div class="main__section2--video">
+                    <iframe src="https://www.youtube.com/embed/QktoWS0pwpE" frameborder="0" allowfullscreen></iframe>
+                </div </div>
         </section>
 
         <section class="main__section3">

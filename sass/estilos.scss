@@ -1,5 +1,6 @@
 @import "_responsiveDesktop.scss";
 @import "_responsiveMobile.scss";
+@import "_responsiveTablet.scss";
 
 /* -/- FOOTER -/- */
 
@@ -22,8 +23,21 @@
             text-decoration: none;
             color: darkgreen;
             font-size: 1.2rem;
+            padding: 1rem;
             font-weight: 500;
             text-transform: uppercase;
+        }
+
+        & a:hover {
+            background-color: #3a8a3a;
+            color: $Color-Principal;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 
